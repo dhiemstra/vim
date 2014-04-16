@@ -2,8 +2,10 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set pastetoggle=<Leader>p
 set clipboard=unnamed
 set background=dark
+set hidden
 color tomorrow-night
 let g:neocomplcache_enable_at_startup = 1
+let mapleader = "\<Space>"
 
 " Tab key behaviour
 function! InsertTabWrapper()
@@ -34,8 +36,10 @@ func! s:DeleteBuffer()
 endfunc
 
 " Additional key maps
-" imap ii <Esc>
-" map <Leader>t  :CtrlP<CR>
+imap ii <Esc>
+imap ww <Esc>:w<CR>
+
+map <Leader>t  :CtrlP<CR>
 map <Leader>f  :CtrlPClearCache<CR>
 map <Leader>h  :nohl<CR>
 map <Leader>b  :CtrlPBuffer<CR>
@@ -43,6 +47,7 @@ map <Leader>g  :e#<CR>
 map <Leader>w  :w<CR>
 map <C-m>      :CtrlPFunky<CR>
 map <C-n>      :call NumberToggle()<CR>
+nmap <CR> o<Esc>
 nnoremap <silent> <C-l> :bn<CR>
 nnoremap <silent> <C-h> :bp<CR>
 
@@ -50,8 +55,8 @@ map <Leader>sc :vsp db/schema.rb<CR>
 map <Tab>      ==
 
 " Anti RSI keys
-map ,w         :w<CR>
-nmap <space>   :
+" map ,w       :w<CR>
+" nmap <space> :w<CR>
 
 " Switching between buffers with arrow keys
 nmap <silent> <C-e>k :wincmd k<CR>
@@ -65,7 +70,7 @@ map <C-l>      :wincmd l<CR>
 map qq         :bp<CR>:bd #<CR>
 
 " tab switching
-map <Leader>]  :tabn<CR>
-map <Leader>[  :tabp<CR>
+" map <Leader>]  :tabn<CR>
+" map <Leader>[  :tabp<CR>
 " map <C-l>  :tabn<CR>
 " map <C-h>  :tabp<CR>
