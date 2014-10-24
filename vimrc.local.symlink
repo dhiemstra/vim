@@ -1,6 +1,5 @@
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set pastetoggle=<Leader>p
-set clipboard=unnamed
 set background=dark
 set hidden
 color tomorrow-night
@@ -18,6 +17,8 @@ function! InsertTabWrapper()
 endfunction
 
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+
+map <Leader>' :s/\'\(.*\)\'/\"\1\"<CR>:nohl<CR>
 
 " Delete buffer from open buffer list
 let g:ctrlp_buffer_func = { 'enter': 'MyCtrlPMappings' }
@@ -40,13 +41,14 @@ imap ii <Esc>
 imap ww <Esc>:w<CR>
 
 map <Leader>t  :CtrlP<CR>
+map <Leader>p  :CtrlP<CR>
 map <Leader>f  :CtrlPClearCache<CR>
 map <Leader>h  :nohl<CR>
 map <Leader>b  :CtrlPBuffer<CR>
 map <Leader>g  :e#<CR>
 map <Leader>w  :w<CR>
+map <Leader>n  :call NumberToggle()<CR>
 map <C-m>      :CtrlPFunky<CR>
-map <C-n>      :call NumberToggle()<CR>
 nmap <CR> o<Esc>
 nnoremap <silent> <C-l> :bn<CR>
 nnoremap <silent> <C-h> :bp<CR>
@@ -63,7 +65,12 @@ nmap <silent> <C-e>k :wincmd k<CR>
 nmap <silent> <C-e>j :wincmd j<CR>
 nmap <silent> <C-e>h :wincmd h<CR>
 nmap <silent> <C-e>l :wincmd l<CR>
-map <C-j>      :wincmd k<CR>
+
+" map <Leader>j      :wincmd j<CR>
+" map <Leader>k      :wincmd k<CR>
+" map <Leader>h      :wincmd h<CR>
+" map <Leader>l      :wincmd l<CR>
+
 map <C-k>      :wincmd j<CR>
 map <C-h>      :wincmd h<CR>
 map <C-l>      :wincmd l<CR>
