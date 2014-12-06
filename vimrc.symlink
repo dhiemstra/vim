@@ -16,7 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails.git'
 Plugin 'bling/vim-airline'
 Plugin 'vim-coffee-script'
-Plugin 'neocomplcache'
+" Plugin 'neocomplcache'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'Auto-Pairs'
 " Plugin 'SirVer/ultisnips'
@@ -51,9 +51,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 set laststatus=2
 
 " Set correct clipboard
-if $TMUX == ''
-  set clipboard+=unnamed
-endif
+set clipboard+=unnamed
 
 " Remember last location in file
 if has("autocmd")
