@@ -5,6 +5,7 @@ set hidden
 color tomorrow-night
 let g:neocomplcache_enable_at_startup = 1
 let mapleader = "\<Space>"
+let g:NERDTreeHijackNetrw=0
 
 " Tab key behaviour
 function! InsertTabWrapper()
@@ -38,7 +39,7 @@ endfunc
 
 " Additional key maps
 imap ii <Esc>
-imap ww <Esc>:w<CR>
+" imap ww <Esc>:w<CR>
 
 map <Leader>t  :CtrlP<CR>
 map <Leader>p  :CtrlP<CR>
@@ -55,6 +56,7 @@ nnoremap <silent> <C-h> :bp<CR>
 
 map <Leader>sc :vsp db/schema.rb<CR>
 map <Tab>      ==
+imap <C-o>      <Plug>snipMateNextOrTrigger
 
 " Anti RSI keys
 " map ,w       :w<CR>
