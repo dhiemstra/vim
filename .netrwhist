@@ -1,11 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/dhiemstra/Projects/salonized'
-let g:netrw_dirhist_2='/'
-let g:netrw_dirhist_3='/Users/dhiemstra/Projects/salonized'
+let g:netrw_dirhist_2='/Users/dhiemstra/Projects/external/vraag-hugo'
+let g:netrw_dirhist_3='/Users/dhiemstra/Projects/external/fitmo-marketing'
 let g:netrw_dirhist_4='/Users/dhiemstra/Projects/devops/ansible-salonized'
 let g:netrw_dirhist_5='/Users/dhiemstra/Projects/salonized'
-let g:netrw_dirhist_6='/Users/dhiemstra/Projects/external/vraag-hugo'
-let g:netrw_dirhist_7='/Users/dhiemstra/Projects/hostapp'
-let g:netrw_dirhist_8='/Users/dhiemstra/Projects/devops/ansible-salonized'
-let g:netrw_dirhist_9='/Users/dhiemstra/Projects/salonized'
+let g:netrw_dirhist_6='/Users/dhiemstra/Projects/devops/ansible-salonized'
