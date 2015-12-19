@@ -44,6 +44,7 @@ imap ii <Esc>
 map <Leader>t  :CtrlP<CR>
 map <Leader>p  :CtrlP<CR>
 map <Leader>f  :CtrlPClearCache<CR>
+map <Leader>[  :CtrlP app/assets/javascripts/salonized<CR>
 map <Leader>h  :nohl<CR>
 map <Leader>b  :CtrlPBuffer<CR>
 map <Leader>g  :e#<CR>
