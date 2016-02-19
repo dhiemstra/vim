@@ -1,7 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/dhiemstra/Projects/salonized'
-let g:netrw_dirhist_2='/Users/dhiemstra/Projects/salonized/db'
-let g:netrw_dirhist_3='/Users/dhiemstra/Projects/salonized'
-let g:netrw_dirhist_4='/Users/dhiemstra/Projects/ansible-salonized'
-let g:netrw_dirhist_5='/Users/dhiemstra/Projects/salonized'
+let g:netrw_dirhist_cnt =0

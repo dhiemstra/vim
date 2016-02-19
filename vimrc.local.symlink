@@ -6,6 +6,7 @@ color tomorrow-night
 let g:neocomplcache_enable_at_startup = 1
 let mapleader = "\<Space>"
 let g:NERDTreeHijackNetrw=0
+let g:ctrlp_root_markers = ['README.md']
 
 " Tab key behaviour
 function! InsertTabWrapper()
