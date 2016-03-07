@@ -2,6 +2,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set pastetoggle=<Leader>p
 set background=dark
 set hidden
+set cursorline
 color tomorrow-night
 let g:neocomplcache_enable_at_startup = 1
 let mapleader = "\<Space>"
