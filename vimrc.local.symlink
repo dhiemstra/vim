@@ -3,6 +3,8 @@ set pastetoggle=<Leader>p
 set background=dark
 set hidden
 set cursorline
+set noeb vb t_vb=
+
 color tomorrow-night
 let g:neocomplcache_enable_at_startup = 1
 let mapleader = "\<Space>"
