@@ -6,10 +6,9 @@ set cursorline
 set noeb vb t_vb=
 
 color tomorrow-night
-let g:neocomplcache_enable_at_startup = 1
 let mapleader = "\<Space>"
-let g:NERDTreeHijackNetrw=0
-let g:ctrlp_root_markers = ['README.md']
+" let g:NERDTreeHijackNetrw=0
+let g:ctrlp_root_markers = ['Gemfile']
 
 " Tab key behaviour
 function! InsertTabWrapper()
@@ -55,14 +54,12 @@ map <Leader>b  :CtrlPBuffer<CR>
 map <Leader>g  :e#<CR>
 map <Leader>w  :w<CR>
 map <Leader>n  :call NumberToggle()<CR>
-map <C-m>      :CtrlPFunky<CR>
 nmap <CR> o<Esc>
 nnoremap <silent> <C-l> :bn<CR>
 nnoremap <silent> <C-h> :bp<CR>
 
 map <Leader>sc :vsp db/schema.rb<CR>
 map <Tab>      ==
-imap <C-o>      <Plug>snipMateNextOrTrigger
 
 " Anti RSI keys
 " map ,w       :w<CR>
