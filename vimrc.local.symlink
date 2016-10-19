@@ -1,11 +1,11 @@
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set pastetoggle=<Leader>p
-set background=dark
+set background=light
 set hidden
 set cursorline
 set noeb vb t_vb=
 
-color tomorrow-night
+color lucius
 let mapleader = "\<Space>"
 " let g:NERDTreeHijackNetrw=0
 let g:ctrlp_root_markers = ['Gemfile']
