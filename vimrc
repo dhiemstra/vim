@@ -31,6 +31,9 @@ source ~/.vim/plugins.vim
 source ~/.vim/functions.vim
 source ~/.vim/bindings.vim
 
+" Plugin configuration
+let g:pymode_lint = 0
+
 " Colorschemes
 " gruvbox, inkpot, zenburn, hybrid_material
 "
