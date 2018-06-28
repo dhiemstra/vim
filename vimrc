@@ -23,3 +23,6 @@ set list listchars=tab:\ \ ,trail:·
 
 " Plugins
 source ~/.vim/plugins.vim
+
+colorscheme gruvbox
+set background=dark
