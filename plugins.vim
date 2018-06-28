@@ -4,6 +4,7 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf', { 'do': 'yes \| ./install' }
 Plug 'kovisoft/paredit', { 'for': ['clojure', 'scheme'] }
 Plug 'itchyny/lightline.vim'
+Plug 'flazz/vim-colorschemes'
 
 " Handyness
 Plug 'w0rp/ale'                                               " Linters
