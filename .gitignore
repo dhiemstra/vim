@@ -1,3 +1,7 @@
 bundle/*
-backup/*
+tmp/*
+!/backup/.keep
+!/tmp/.keep
+
 .netrwhist
+.DS_Store
