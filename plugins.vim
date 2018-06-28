@@ -8,6 +8,7 @@ Plug 'itchyny/lightline.vim'
 " Colors
 Plug 'flazz/vim-colorschemes'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'sonph/onehalf'
 
 " Handyness
 Plug 'w0rp/ale'                                               " Linters
