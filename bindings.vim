@@ -8,7 +8,8 @@ map qq         :bp<CR>:bd #<CR>
 
 " nmap <CR> o<Esc>
 " imap ii <Esc>
-" map <Leader>' :s/\'\(.*\)\'/\"\1\"<CR>:nohl<CR>
+nmap <Leader>' :s/\'\(.*\)\'/\"\1\"<CR>:nohl<CR>
+nmap <space> :w<CR>
 
 map <F5> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
 
@@ -22,10 +23,19 @@ nmap <silent> <C-e>l :wincmd l<CR>
 " map <C-h>      :wincmd h<CR>
 " map <C-l>      :wincmd l<CR>
 
-" FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
-map <Leader>p  :FZF<CR>
-
 " NERDTree
 " map <Leader>nf :NERDTreeFind<CR>
 " map <Leader>nf :NERDTreeFind<CR>
 " map <Leader>nt :NERDTreeToggle<CR>
+
+" FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
+nmap <Leader>p  :FZF<CR>
+" nmap <Leader>b  :FZF Buffers<CR>
+ 
+nnoremap <silent> <Leader>b :call fzf#run({
+\   'source':  reverse(BufferList()),
+\   'sink':    function('BufferOpen'),
+\   'options': '+m',
+\   'down':    len(BufferList()) + 2
+\ })<CR>
+

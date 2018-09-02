@@ -23,3 +23,14 @@ function! InsertTabWrapper()
     endif
 endfunction
 
+" Buffers
+function! BufferList()
+  redir => ls
+  silent ls
+  redir END
+  return split(ls, '\n')
+endfunction
+
+function! BufferOpen(e)
+  execute 'buffer' matchstr(a:e, '^[ 0-9]*')
+endfunction
